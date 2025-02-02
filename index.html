@@ -4,11 +4,17 @@
     <meta charset="utf-8">
     <title>ConmanoRatings</title>
     <meta name="description" content="All Conmano's favourite media!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css"/>
     <link rel="stylesheet" href="style.css"/>
   </head>
 
   <body>
+    <!-- Checkbox for fake autoscroll (do not change DOM, must be sibling to .list) -->
+    <input id="scrollbox" type="checkbox" name="scroll">
+    <label for="scrollbox">Scroll</label>
+
+    <!-- List of media rating entries (manually ordered from highest to lowest) -->
 	<div class="list">
         <div class="entry">
             <div class="first-segment">

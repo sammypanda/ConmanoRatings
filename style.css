@@ -1,9 +1,35 @@
+/* Align checkbox to right side */
+label[for="scrollbox"] {
+    position: absolute !important;
+    top: 12px;
+    right: 12px;
+    z-index: 10;
+}
+
+/* Style the list */
+.list {
+    z-index: 0;
+}
+
+/* Style the list entry */
 .entry {
     display: flex;
     flex-direction: row;
 }
 
+/* Style the list entry media art */
 .media-art {
     width: 200px;
     height: 266.667px;
+}
+
+/* Scroll the list when scrollbox checked */
+input[name="scroll"]:checked ~ .list {
+    animation: autoscroll 10s infinite linear;
+}
+
+/* Animation to fake the auto scrolling */
+@keyframes autoscroll {
+    from { transform: translateY(100%) }
+    to { transform: translateY(-100%) }
 }
