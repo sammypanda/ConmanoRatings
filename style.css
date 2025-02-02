@@ -16,12 +16,37 @@ label[for="scrollbox"] {
     flex-direction: column;
     gap: 50px;
     z-index: 0;
+    align-items: center;
 }
 
 /* Style the list entry */
 .entry {
     display: flex;
     flex-direction: row;
+    width: min-content; /* inner segments have specific widths so this is safe */
+    padding: 0;
+}
+
+/* Style the first segments */
+.first-segment {
+    padding-right: 0;
+}
+
+/* Style the second segments */
+.second-segment {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    width: 300px;
+}
+
+/* Style the third segments */
+.third-segment {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
 }
 
 /* Style the list entry media art */
