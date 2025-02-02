@@ -8,6 +8,9 @@ label[for="scrollbox"] {
 
 /* Style the list */
 .list {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     z-index: 0;
 }
 
