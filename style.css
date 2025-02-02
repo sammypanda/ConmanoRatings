@@ -39,6 +39,9 @@ label[for="scrollbox"] {
     padding-right: 30px;
     width: 300px;
 }
+.description {
+    padding-left: 20px;
+}
 
 /* Style the third segments */
 .third-segment {
