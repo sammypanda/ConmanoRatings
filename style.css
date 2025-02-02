@@ -1,3 +1,7 @@
+body {
+    margin: 40px; /* breathing room around list */
+}
+
 /* Align checkbox to right side */
 label[for="scrollbox"] {
     position: absolute !important;
