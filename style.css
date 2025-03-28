@@ -29,6 +29,7 @@ label[for="scrollbox"] {
 
 /* Style the first segments */
 .first-segment {
+    overflow-y: auto !important; /* override default .window-pane forced scroll wheel */ 
     padding-right: 0;
 }
 
