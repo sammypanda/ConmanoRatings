@@ -41,14 +41,18 @@ label[for="scrollbox"] {
 .second-segment {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     padding-left: 30px;
     padding-top: 30px;
     padding-right: 30px;
     width: 300px;
 }
 .description {}
-.ongoing-game {}
+.ongoing-game {
+    /* align-self: center; */
+    height: auto;
+    width: 50%;
+}
 
 /* Style the third segments */
 .third-segment {
