@@ -68,7 +68,7 @@ label[for="scrollbox"] {
 
 /* Scroll the list when scrollbox checked */
 input[name="scroll"]:checked ~ .list {
-    animation: autoscroll 10s infinite linear;
+    animation: autoscroll 35s infinite linear;
 }
 
 /* Animation to fake the auto scrolling */
