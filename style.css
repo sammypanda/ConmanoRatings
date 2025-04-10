@@ -27,6 +27,9 @@ label[for="scrollbox"] {
     width: min-content; /* inner segments have specific widths so this is safe */
     padding: 0;
 }
+.entry-selected {
+    animation: selected 5s infinite ease-in-out;
+}
 
 /* Style the first segments */
 .first-segment {
@@ -75,4 +78,12 @@ input[name="scroll"]:checked ~ .list {
 @keyframes autoscroll {
     from { transform: translateY(100vh) }
     to { transform: translateY(-110%) }
+}
+
+@keyframes selected {
+    0%,100% {
+        box-shadow: 0 5px 10px black;
+    }
+    50% { box-shadow: 0 5px 10px rgba(0, 0, 0, 0.500);
+    }
 }
