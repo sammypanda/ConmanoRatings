@@ -1,6 +1,14 @@
 body {
     margin: 40px; /* breathing room around list */
-    overflow: hidden;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
 }
 
 /* Align checkbox to right side */
