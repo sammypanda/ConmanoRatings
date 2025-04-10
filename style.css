@@ -1,5 +1,6 @@
 body {
     margin: 40px; /* breathing room around list */
+    overflow: hidden;
 }
 
 /* Align checkbox to right side */
@@ -72,6 +73,6 @@ input[name="scroll"]:checked ~ .list {
 
 /* Animation to fake the auto scrolling */
 @keyframes autoscroll {
-    from { transform: translateY(100%) }
-    to { transform: translateY(-100%) }
+    from { transform: translateY(100vh) }
+    to { transform: translateY(-110%) }
 }
